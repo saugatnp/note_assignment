@@ -16,7 +16,7 @@ overflow: hidden;
 }
 .main-page{
     /* overflow-y: scroll; */
-    /* width: 100vw; */
+    position: relative;
     width: 99%;
     margin: 10px;
     padding:10px;
@@ -69,4 +69,7 @@ a{
 }
 .white-text{
     color: white;
+}
+.model-open{
+    padding:0px !important;
 }

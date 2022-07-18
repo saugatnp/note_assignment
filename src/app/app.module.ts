@@ -8,6 +8,9 @@ import { NavigationComponent } from './content/navigation/navigation.component';
 import { RouterModule } from '@angular/router';
 import { TagsComponent } from './content/tags/tags.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TagsComponent
   ],
   imports: [
+    CommonModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
